@@ -1,0 +1,39 @@
+ def get_weather(city):
+#     api_key = 'b4f7202992fc4a275a549aa49227b165'
+#     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
+#     response = requests.get(url)
+#     return response.json()
+
+# def weather_report(request):
+#     city = request.GET.get('city', 'Mysore')  #default mysore
+#     weather_data = get_weather(city) 
+#     context = {
+#         'city': city,
+#         'temperature': weather_data['main']['temp'],
+#         'description': weather_data['weather'][0]['description'],
+#         'icon': weather_data['weather'][0]['icon'],
+#     }
+#     return render(request, 'weather_report.html', context)
+
+
+# {% load static %}
+# <!DOCTYPE html>
+# <html lang="en">
+# <head>
+#     <meta charset="UTF-8">
+#     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#     <link rel="stylesheet" href="{% static '../static/css/weather.css' %}">
+#     <title>Weather Report</title>
+# </head>
+# <body>
+#     <h1>Weather in {{ city }}</h1>
+#     <p>Temperature: {{ temperature }}°C</p>
+#     <p>Description: {{ description }}</p>
+#     <img src="http://openweathermap.org/img/w/{{ icon }}.png" alt="Weather Icon">
+    
+#     <form method="get">
+#         <input type="text" name="city" placeholder="Enter city name">
+#         <button type="submit">Get Weather</button>
+#     </form>
+# </body>
+# </html> 
